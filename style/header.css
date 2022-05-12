@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #373F51;
+    color: white;
+    padding: 25px;
+}
+
+.logo{
+    margin-left: 10%;
+}
+
+.logo h1{
+    font-family: URW Chancery L, cursive;
+}
+
+.menu{
+    margin-right: 10%;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu ul a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    color: #008DD5;
+}
+
+.menu ul li{
+    margin-left: 25px;
+}
+
+.burger_btn{
+    display: none;
+}
+
+.burger_btn:hover{
+    color: #008DD5;
+}
+
+.burger_btn span{
+    position: relative;
+    top: 30px;
+    display: block;
+    font-size: 60px;
+    margin-top: -65px;
+}
+
+.burger{
+    display: none;
+    background: #373F51;
+    text-align: center;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.burger_active{
+    display: block;
+}
+
+.burger ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.burger ul li a:hover{
+    color: #008DD5;
+}
+
+.burger ul li{
+    margin-bottom: 15px;
+}
+
+.background{
+    margin-top: -15px;
+    background: url('../images/guitar_background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+.background h1{
+    font-size: 80px;
+    font-family: Luminari, fantasy;
+}
+
+.background p{
+    font-size: 35px;
+}
+
+@media (max-width: 850px) {
+    .menu{
+        display: none;
+    }
+
+    .burger_btn{
+        display: block;
+    }
+}
+
+@media (min-width: 850px) {
+    .burger{
+        display: none;
+    }
+}
+

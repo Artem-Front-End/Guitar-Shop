@@ -1,0 +1,134 @@
+.light-mode{
+
+}
+
+.slider_logo{
+    font-family: Monotype Corsiva;
+    text-align: center;
+    color: #373F51;
+    font-size: 70px;
+    margin: 10px;
+}
+
+.slider_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider_container button{
+    font-size: 100px;
+    border: none;
+    background: white;
+}
+
+.slider_container button:active{
+    color: #008DD5;
+}
+
+.slider_container button:hover{
+    box-shadow: 2px 2px 2px #373F51;
+}
+
+
+.slider{
+    max-width: 30%;
+    overflow: hidden;
+    border-right: 2px solid #373F51;
+}
+
+.slider-line{
+    display: flex;
+    transition: all ease 800ms;
+}
+
+.guitars{
+    padding: 100px;
+}
+
+.guitar-list{
+    list-style: none;
+    --auto-grid-min-size: 30rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 6rem;
+}
+
+.guitar-item{
+    text-align: center;
+    border-radius: 6%;
+    font-size: 20px;
+    transition: 600ms;
+}
+
+.guitar-item:hover{
+    border: 1px solid #373F51;
+    box-shadow: 2px 3px 2px #373F51;
+}
+
+.guitar-item h1{
+    font-family: URW Chancery L, cursive;
+}
+
+.guitar-item img{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.guitar-item span{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.guitar-item button{
+    width: 250px;
+    height: 30px;
+    margin: 15px;
+    background-color: #373F51;
+    color: white;
+    font-size: 17px;
+    transition: 250ms;
+}
+.guitar-item button:hover{
+    background-color: #008DD5;
+}
+.guitar-item button:active{
+    box-shadow: 3px 4px 3px #373F51;
+}
+
+/*popup*/
+
+.popup{
+    display: none;
+    width: 450px;
+    height: 350px;
+    color: rgba(255,255,255,1);
+    position: relative;
+    margin: 50px auto;
+    background-color: rgba(173, 216, 230, 0.7);
+    border: 3px solid #373F51;
+    border-radius: 5%;
+    padding-top: 50px;
+    text-align: center;
+    box-shadow: 3px 4px 3px #008DD5;
+    transition: 800ms;
+    transform: scale(1);
+}
+
+.popup:hover{
+    transition: 800ms;
+    transform: scale(1.2);
+}
+
+.popup h2{
+    -webkit-text-stroke: .07em #373F51;
+    text-shadow: .07em 0 #373F51 ;
+}
+
+.activePopup{
+    display: block;
+    transition: 1s;
+}
+
